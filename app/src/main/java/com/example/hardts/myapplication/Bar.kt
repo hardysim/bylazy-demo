@@ -7,7 +7,7 @@ interface Bar {
 }
 
 class Test {
-    private val foo by lazy {
+    private val foo : Foo by lazy {
         object : Foo(), Bar {
             override val lazyLoadedString = "Demo"
         }
